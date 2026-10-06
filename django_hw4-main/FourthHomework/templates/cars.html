@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Автосалон - {{ name }}</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .content { padding: 50px; text-align: center; background: white; margin: 20px auto; max-width: 800px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header><h1>Світ Автомобілів</h1></header>
+    <nav>
+        <a href="/cars/">Головна</a>
+        <a href="/cars/toyota">Toyota</a>
+        <a href="/cars/honda">Honda</a>
+        <a href="/cars/renault">Renault</a>
+    </nav>
+    <div class="content">
+        <h2>{{ name }}</h2>
+        <p>{{ desc }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Який сьогодні день?</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial Black', sans-serif;
+            /* Колір змінюється через контекст Django */
+            background-color: {{ day.color }}; 
+            transition: background 0.5s;
+        }
+        h1 {
+            font-size: 8vw;
+            color: white;
+            text-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ day.name }}</h1>
+</body>
+</html>

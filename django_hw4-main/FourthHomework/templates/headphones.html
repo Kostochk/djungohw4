@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Огляд навушників</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; line-height: 1.6; }
+        .product-box { border: 1px solid #ddd; padding: 20px; border-radius: 10px; max-width: 500px; }
+        h1 { color: #222; }
+        .specs { color: #666; font-style: italic; }
+        .menu { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="product-box">
+        <h1>{{ info.full_name }}</h1>
+        <p class="specs">{{ info.specs }}</p>
+    </div>
+    <div class="menu">
+        <p>Швидкий пошук:</p>
+        <a href="?model=airpods">Apple AirPods</a> | 
+        <a href="?model=budslive">Samsung Buds Live</a>
+    </div>
+</body>
+</html>
